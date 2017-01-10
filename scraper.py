@@ -21,4 +21,4 @@ for i in data:
     if 'wilt' in i['id']:
         print 'CONTAINS WILT'
     print record
-    scraperwiki.sqlite.save(['id'], record)
+    scraperwiki.sqlite.save(['idcode'], record)
