@@ -1,7 +1,7 @@
 # Hello World program in Python
     
 print "Hello World!\n"
-# Hello World program in Python
+
 import urllib, json
 url = "https://data.police.uk/api/forces"
 response = urllib.urlopen(url)
@@ -15,4 +15,3 @@ for i in data:
     if 'wilt' in i['id']:
         print 'CONTAINS WILT'
 
-f = open('workfile', 'w')
