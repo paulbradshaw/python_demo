@@ -27,6 +27,8 @@ If you click execute, those two lines of code will run, and that string of text 
 
 We're going to adapt some code that we can use to pull in some data from a URL. 
 
+You can [find the code in full here](https://github.com/paulbradshaw/python_demo/blob/master/main.py). I'm going to explain it line by line below.
+
 Most coding is done by finding some useful code and adapting it, and this example is no exception. 
 
 I've googled "python read json files from url" and come to [this page on StackOverflow](https://stackoverflow.com/questions/12965203/how-to-get-json-from-webpage-into-python-script). I'm going to adapt the first few lines of that and explain them along the way:
