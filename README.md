@@ -14,9 +14,10 @@ The website screen is split into 3 sections:
 
 The code window already has two lines of code:
 
-`# Hello World program in Python`
-
-`print "Hello World!\n"`
+```python
+# Hello World program in Python
+print "Hello World!\n"
+```
 
 The first line is a *comment*. Comments start with a hash symbol (`#`) and do not do anything, apart from describe what comes after. They are useful for explaining what the code is doing, both for others and for yourself when you return to it later.
 
@@ -34,7 +35,9 @@ Most coding is done by finding some useful code and adapting it, and this exampl
 
 I've googled "python read json files from url" and come to [this page on StackOverflow](https://stackoverflow.com/questions/12965203/how-to-get-json-from-webpage-into-python-script). I'm going to adapt the first few lines of that and explain them along the way:
 
-`import urllib, json`
+```python
+import urllib, json
+```
 
 This first line uses the `import` command to bring two **libraries** into our code. Libraries are often used in programming as a way to use pieces of code that other people have written and helpfully shared with others. 
 
@@ -46,27 +49,36 @@ Try copying that URL (without the quotation marks) and putting it into a browser
 
 We're going to *adapt* that line and change the URL to one that we know does contain some JSON data:
 
-`url = "https://data.police.uk/api/forces"`
+```python
+url = "https://data.police.uk/api/forces"
+```
 
 The next line opens the URL and puts the contents of that webpage (the JSON) into a **variable** called `response`:
 
-`response = urllib.urlopen(url)`
+```python
+response = urllib.urlopen(url)
+```
 
 Then the next line takes that `response` variable, uses something called `.read()` on it (reading the webpage), and then uses the results of *that* as the ingredient for `json.loads`, loading it (as JSON) into the new variable `data`. 
 
-`data = json.loads(response.read())`
+```python
+data = json.loads(response.read())
+```
 
 Now to print what we have put into that new variable `data`:
 
-`print data`
+```python
+print data
+```
 
 This just shows us all the JSON. Now I'm going to add some more lines to go through that.
 
 The JSON data is a **list**. The following two lines **loop** through that list and display each item in turn:
 
-`for i in data:`
-
-`    print i`
+```python
+for i in data:
+    print i
+```
 
 Note that the first line ends in a **colon** and the second line is indented. That indentation indicates that the second line is related to the one above it. This is important for any loop. It means for each item in that list (which we've called `i`, but could call almost anything), print the item (`i`). 
 
@@ -76,13 +88,16 @@ Notice that `"id"` and `"name"` always stay the same (these are the **keys**), b
 
 We can print more specifically by using square brackets to identify the key in each item like so:
 
-`    print i['name']`
+```python
+print i['name']
+```
 
 And we can test things by using **operators** like so:
 
-`    if i['id'] == 'wiltshire':`
-
-> `        print 'THIS IS WILTSHIRE2'`
+```python
+if i['id'] == 'wiltshire':
+        print 'THIS IS WILTSHIRE2'
+```
 
 Note that the **if** line also ends with a colon, and the line underneath (which only executes *if* the condition is met, or TRUE) is indented again. Because the if line itself is already indented, that next line is indented twice.
 
@@ -90,8 +105,9 @@ The operator in this case is `==`. Others include `>` (greater than, for numbers
 
 You can also look for text inside a string by using `in` like so:
 
-`    if 'wilt' in i['id']:`
-
-> `        print 'IT CONTAINS WILT'`
+```python
+    if 'wilt' in i['id']:
+        print 'IT CONTAINS WILT'
+```
 
 [The next step - storing data using Morph.io - can be found here](https://github.com/paulbradshaw/python_demo/blob/master/morphio.md)
