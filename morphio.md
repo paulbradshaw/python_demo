@@ -18,21 +18,25 @@ That .py file will already have some basic Python scraping code in it. You can c
 
 Leave the first line as it is:
 
-`import scraperwiki`
+```python
+import scraperwiki
+```
 
 But the rest can be deleted.
 
 Add this line:
 
-`record = {}`
+```python
+record = {}
+```
 
 After `print i['name']` add the following two lines:
 
-`    record['idcode'] = i['id']`
-
-`    record['fullname'] = i['name']`
-
-`    scraperwiki.sqlite.save(['idcode'], record)`
+```python
+    record['idcode'] = i['id']
+    record['fullname'] = i['name']
+    scraperwiki.sqlite.save(['idcode'], record)
+```
 
 (Don't forget the indents).
 
