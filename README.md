@@ -82,7 +82,7 @@ And we can test things by using **operators** like so:
 
 `    if i['id'] == 'wiltshire':`
 
-`        print 'THIS IS WILTSHIRE2'`
+> `        print 'THIS IS WILTSHIRE2'`
 
 Note that the **if** line also ends with a colon, and the line underneath (which only executes *if* the condition is met, or TRUE) is indented again. Because the if line itself is already indented, that next line is indented twice.
 
@@ -92,6 +92,6 @@ You can also look for text inside a string by using `in` like so:
 
 `    if 'wilt' in i['id']:`
 
-`        print 'IT CONTAINS WILT'`
+> `        print 'IT CONTAINS WILT'`
 
 [The next step - storing data using Morph.io - can be found here](https://github.com/paulbradshaw/python_demo/blob/master/morphio.md)
