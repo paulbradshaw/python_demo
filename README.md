@@ -15,6 +15,7 @@ The website screen is split into 3 sections:
 The code window already has two lines of code:
 
 `# Hello World program in Python`
+
 `print "Hello World!\n"`
 
 The first line is a *comment*. Comments start with a hash symbol (`#`) and do not do anything, apart from describe what comes after. They are useful for explaining what the code is doing, both for others and for yourself when you return to it later.
