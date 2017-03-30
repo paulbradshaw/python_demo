@@ -6,4 +6,6 @@ Start here: [A brief introduction to Execute Python Online](https://github.com/p
 
 [You might find Try Jupyter an easier option](https://github.com/paulbradshaw/python_demo/blob/master/tryjupyter.md) - a brief intro at that link.
 
+[And playing with PythonAnywhere](https://github.com/paulbradshaw/python_demo/blob/master/pythonanywhere.md) can be useful too.
+
 [The next step - storing data using Morph.io - can be found here](https://github.com/paulbradshaw/python_demo/blob/master/morphio.md)
