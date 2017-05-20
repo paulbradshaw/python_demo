@@ -13,3 +13,5 @@ There's also [Trinket](https://trinket.io/), which could be a way to allow peopl
 [The next step - storing data using Morph.io - can be found here](https://github.com/paulbradshaw/python_demo/blob/master/morphio.md)
 
 After that it's worth looking at [creating a web app on PythonAnywhere](https://help.pythonanywhere.com/pages/WebAppBasics/)... Here's [one tutorial on creating a database-backed website using it](https://blog.pythonanywhere.com/121/) and [here's another](https://www.pythonanywhere.com/forums/topic/567/)
+
+[Jupyter notebooks (previously iPython) are outlined here](https://github.com/paulbradshaw/python_demo/blob/master/jupyter_notebooks.md)
