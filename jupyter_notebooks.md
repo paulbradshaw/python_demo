@@ -42,3 +42,4 @@ Underneath that you can add normal text introducing your project. You can [use M
 
 When you want to switch from narrative to working code, insert a new cell by clicking on the *Insert* menu and choosing whether to insert it above or below the current cell.
 
+You can [find more advice in Jupyter's guide to Notebook Basics](https://nbviewer.jupyter.org/github/ipython/ipython/blob/3.x/examples/Notebook/Notebook%20Basics.ipynb)
